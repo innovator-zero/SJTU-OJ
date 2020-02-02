@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1555392719 source:e:\program_cpp\oj homework&exam\1a\main.cpp
+	<iostream>
+	<cstdio>
+	<cstring>
+
