@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1557474649 source:e:\program_cpp\xjb write\4048\main.cpp
+	<iostream>
+	<cstdio>
+	<algorithm>
+

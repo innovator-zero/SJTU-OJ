@@ -1,0 +1,54 @@
+#include <iostream>
+#include <cstring>
+#include <cstdlib>
+
+using namespace std;
+
+char n[100],tmp[100];
+char str[100][100];
+
+bool huiwen(char* x)
+{
+    int b=strlen(x)-1;
+    int a=0;
+    while(a<b){
+        if(x[a]!=x[b])return false;
+        a++;
+        b--;
+    }
+    return true;
+}
+char* rev(char* x)
+{
+
+    strcpy(tmp,x);
+    int b=strlen(tmp)-1;
+    int a=0;
+    while(a<b){
+        swap(tmp[a],tmp[b]);
+        a++;
+        b--;
+    }
+    return tmp;
+}
+int main()
+{
+    int num1,num2,cou=0;
+    while(cin>>n)
+    {
+        strcpy(str[0],n);
+        while(!huiwen(n))
+        {
+            num1=atoi(n);
+            num2=atoi(rev(n));
+            sprintf(n,"%d",num1+num2);
+            cou++;
+            strcpy(str[cou],n);
+        }
+        cout<<cou<<'\n'<<str[0];
+        for(int i=1;i<=cou;i++){
+            cout<<"--->"<<str[i];
+        }
+    }
+    return 0;
+}

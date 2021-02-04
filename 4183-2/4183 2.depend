@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1553242527 source:e:\program_cpp\oj homework&exam\4183 2\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+
